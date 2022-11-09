@@ -29,10 +29,10 @@ We have used the logistic regression model from scikit-learn and tuned it using 
 7. Evaluate model on test data- accuracy.
 8. Save model in '.pkl' format using joblib package.
 
-**Benefits of Hyperparameter Sampling**
+### Benefits of Hyperparameter Sampling
 I have used RandomParameterSampling on two hyperparameters called C and max_iter. C controls the level of regularization in model and max_iter decides how long a model should be trained. Lower value of C means higher regularization. Unlike grid parameter sampling, random paramater sampling doesn't look at every combination of hyperparameter values. Instead, it just selects random combination of hyperparameters and gives almost similar performance in lesser run time.
 
-**Benefits of Early Stopping Policy**
+### Benefits of Early Stopping Policy**
 I have used BanditPolicy for early stopping. It terminates the run when it doesn't fall within the slack factor of the evaluation metric with respect to the best performing model at an interval. It helps in saving compute when subsequent runs are not giving better performance.
 
 ## AutoML
